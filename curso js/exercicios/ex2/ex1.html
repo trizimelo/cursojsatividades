@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de pessoas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de pessoas</h1>
+    </header>
+    <main>
+        <section>
+            <div>
+                <p>Ano de nascimento: 
+                    <input type="number" id="txtano" min="1900" max="2021">
+                </p>
+                <p>Sexo:
+                    <input type="radio" name="radsex" id="mas" checked>
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+                    <br>
+                    <input type="button" value="verificar" onclick="verificar()">
+                </p>
+            </div>
+
+            <div id="res">
+                Preencha os dados acima para ver os resultados
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Made by &copy;trizimelo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

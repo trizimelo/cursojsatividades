@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você É DAQUI?</title>
+</head>
+<body>
+    <H1>Da onde você é?</H1>
+    <input type="text" id="pais">
+    <input type="button" value="ver" onclick="ver()">
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function ver(){
+            var pais = document.getElementById('pais')
+            var res = document.getElementById('res')
+            res.innerHTML= `<p>Vivendo em ${pais}!</p>`
+            if (pais === 'BR'){
+                res.innerHTML+="<p>Você É BRASILEIRO!</p>"
+            }else{
+                res.innerHTML+="<p>Você é ESTRANGEIRO!</p>"
+            }
+        }
+        
+    </script>
+</body>
+</html>
